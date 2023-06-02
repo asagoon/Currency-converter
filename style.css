@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    background: #fafbfc;
+    color: #333;
+}
+.container{
+    background: #fafbfc;
+    width: 380px;
+    padding: 30px;
+    font-family: Helvetica,Arial,sans-serif;
+    border: 1.5px solid;
+    border-radius: 15px;
+}
+.container header{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+.container p{
+    font-size: 18px;
+    margin: 5px;
+}
+.form {
+    font-size: 18px;
+    margin: 40px 0 20px 0;
+}
+.form input{
+    width: 75%;
+    height: 30px;
+}
+.form input:focus{
+    padding: 0 14px;
+    border: 2px solid orange;
+}
+.exchange button{
+    font-size: 20px;
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.exchange button:active{
+    background: gray;
+}
+.list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.list .select-box {
+    display: flex;
+    height: 45px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.select-box select{
+    width: auto;
+    font-size: 14px;
+    margin: 0 4px;
+}
+.select-box img{
+    max-width: 55px;
+}
+.list .icon {
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.container .result{
+    font-size: 18px;
+    margin-top: 30px;
+}

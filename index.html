@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Currency Converter App</title>
+</head>
+<body>
+    <div class="container">
+        <header>Currency Converter</header>
+            <div class="form">
+      <label for="amountInput">Amount:</label>
+      <input type="number" id="amountInput" placeholder="Enter the amount">
+    </div>
+    
+    <div class="list">
+    <div class="from">
+      <p>From:</p>
+      <div class="select-box">
+        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+    
+      <select id="fromCurrencySelect">
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="AUS">AUS</option>
+        <option value="KRW">KRW</option>
+        <option value="CHH">CHH</option>
+        <option value="GBP">GBP</option>
+        <!-- 他の通貨を追加 -->
+      </select>
+    </div>
+    </div>
+    <div class="icon"><i class="fa fa-exchange"></i></div>
+    <div class="to">
+        <p>To:</p>
+      <!-- <label for="toCurrencySelect">To:</label> -->
+      <div class="select-box">
+    
+      <img src="https://flagsapi.com/CA/flat/64.png" alt="flag">
+      <select id="toCurrencySelect">
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="AUS">AUS</option>
+        <option value="USD">USD</option>
+        <option value="JPY">JPY</option>
+        <option value="CAD">CAD</option>
+        <option value="AUS">AUS</option>
+        <!-- 他の通貨を追加 -->
+      </select>
+    </div>
+    </div>
+</div>
+    
+    <div class="exchange">
+      <button id="convertButton">Convert</button>
+    </div>
+    
+      <div id="result" class="result">123</div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
