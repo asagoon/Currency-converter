@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
@@ -28,27 +29,17 @@ body {
     font-size: 18px;
     margin: 5px;
 }
-.form {
+.amount {
     font-size: 18px;
     margin: 40px 0 20px 0;
 }
-.form input{
+.amount input{
     width: 75%;
     height: 30px;
 }
-.form input:focus{
+.amount input:focus{
     padding: 0 14px;
     border: 2px solid orange;
-}
-.exchange button{
-    font-size: 20px;
-    width: 100%;
-    height: 45px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-.exchange button:active{
-    background: gray;
 }
 .list{
     display: flex;
@@ -69,10 +60,23 @@ body {
 .select-box select{
     width: auto;
     font-size: 14px;
+    background: none;
     margin: 0 4px;
+    border-radius: 3px;
+}
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+.select-box select::-webkit-scrollbar-track {
+    background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
 }
 .select-box img{
-    max-width: 55px;
+    max-width: 50px;
 }
 .list .icon {
     cursor: pointer;
@@ -83,4 +87,14 @@ body {
 .container .result{
     font-size: 18px;
     margin-top: 30px;
+}
+.exchange button{
+    font-size: 20px;
+    width: 100%;
+    height: 45px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.exchange button:active{
+    background: gray;
 }
